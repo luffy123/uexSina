@@ -27,6 +27,7 @@ dependencies {
     compile 'org.appcan:engine:+:systemRelease@aar'
     //依赖远程引擎
     compile files('libs/weibosdkcore.jar')
+    compile 'com.android.support:multidex:1.0.0'
 }
 
 android {
@@ -73,6 +74,8 @@ android {
 
         defaultConfig {
             minSdkVersion 14
+            targetSdkVersion 26
+            multiDexEnabled true
         }
     }
     compileOptions {
